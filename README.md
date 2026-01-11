@@ -206,7 +206,7 @@ This helps users trust that distributed binaries match the source code.
 
 ## 📎 Documentation
 
-- [`SECURITY.md`](https://www.notion.so/SECURITY.md) – Threat model & safeguards
+- [`SECURITY.md`](https://github.com/fikri221/auto-exe-generator/blob/main/SECURITY.md) – Threat model & safeguards
 - JSON Schema – Input validation rules
 - Source code – Fully open
 
