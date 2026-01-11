@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto EXE Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Auto EXE Generator</h1>
+      <p class="subtitle">
+        Create one file to open multiple applications at once.
+      </p>
+
+      <form id="generatorForm">
+        <label>
+          File Name
+          <input type="text" id="fileName" placeholder="MyApps" required />
+        </label>
+
+        <div id="appsContainer">
+          <label>
+            Application Path
+            <input
+              type="text"
+              name="apps"
+              placeholder="C:\Program Files\App\App.exe"
+              required
+            />
+          </label>
+        </div>
+
+        <button type="button" id="addAppBtn">+ Add Another Application</button>
+
+        <button type="submit" class="primary">Generate File</button>
+      </form>
+
+      <p class="security-note">
+        🔒 Your data never leaves your computer. This file only opens the
+        applications you select.
+      </p>
+
+      <p id="status"></p>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
