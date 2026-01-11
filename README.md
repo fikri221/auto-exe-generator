@@ -44,7 +44,7 @@ Security is the **primary design constraint**, not an afterthought.
 - Optional delays
 - Optional arguments (sanitized)
 
-See [`SECURITY.md`](https://www.notion.so/SECURITY.md) for full details.
+See [`SECURITY.md`](https://github.com/fikri221/auto-exe-generator/blob/main/SECURITY.md) for full details.
 
 ---
 
