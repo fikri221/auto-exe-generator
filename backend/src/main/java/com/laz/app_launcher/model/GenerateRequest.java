@@ -7,7 +7,7 @@ public class GenerateRequest {
     private String profileName;
     private String runMode;
     private int delayBetweenAppsMs;
-    private List<String> apps;
+    private List<App> apps;
 
     public String getVersion() {
         return version;
@@ -41,11 +41,11 @@ public class GenerateRequest {
         this.delayBetweenAppsMs = delayBetweenAppsMs;
     }
 
-    public List<String> getApps() {
+    public List<App> getApps() {
         return apps;
     }
 
-    public void setApps(List<String> apps) {
+    public void setApps(List<App> apps) {
         this.apps = apps;
     }
 }

@@ -76,7 +76,7 @@ form.addEventListener('submit', async (e) => {
 
     // Send payload to backend
     try {
-        const response = await fetch('/api/generate', {
+        const response = await fetch('http://localhost:8080/api/generate', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
@@ -89,14 +89,16 @@ form.addEventListener('submit', async (e) => {
 
         const a = document.createElement('a');
         a.href = url;
-        a.download = `${fileName}.exe`;
-        a.document.body.appendChild(a);
+        a.download = `${fileName}.bat`;
+        a.style.display = 'none';
+        document.body.appendChild(a);
         a.click();
-        a.document.body.removeChild(a);
+        document.body.removeChild(a);
 
         setTimeout(() => URL.revokeObjectURL(url), 5000);
         setStatus('✅ File created successfully');
     } catch (err) {
+        console.error(err);
         setStatus('❌ Failed to generate file', true);
     } finally {
         submitBtn.disabled = false;
